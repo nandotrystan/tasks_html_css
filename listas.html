@@ -1,0 +1,181 @@
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listas de Tarefas</title>
+    <link rel="stylesheet" href="./styles/listas.css">
+  </head>
+  <body>
+    <header>
+      <div id="prin">
+        <img
+          id="user-avatar"
+          src="https://cdn.pixabay.com/photo/2022/08/22/11/04/skate-7403432_960_720.jpg"
+          alt="Foto do usuário"
+          class="rounded-circle me-2"
+          style="width: 40px; height: 40px; object-fit: cover"
+        />
+        <h1>Gerenciador de Tarefas</h1>
+      </div>
+      <span id="menu-toggle">☰</span>
+      <div>
+        <a href="home.html">🏠 Home</a>
+        <a href="tarefas.html"> Tarefas</a>
+        <a href="#" id="btn-logout">Logout</a>
+      </div>
+    </header>
+
+    <div id="drawer">
+      <a href="home.html">🏠 Home</a>
+      <a href="listas.html">📋 Listas</a>
+      <a href="#" id="drawer-logout">Logout</a>
+    </div>
+
+    <main>
+      <h2 style="margin-left: 15px">Minhas Listas</h2>
+
+      <div style="margin-left: 15px; margin-bottom: 10px">
+        <button id="btn-nova-lista">+ Criar Nova Lista</button>
+        <form id="form-nova-lista">
+          <input
+            type="text"
+            id="nome-nova-lista"
+            placeholder="Nome da lista"
+            required=""
+          />
+          <button type="submit">Criar</button>
+          <button type="button" id="cancelar-nova-lista">Cancelar</button>
+        </form>
+      </div>
+      <div
+        id="legenda-status"
+        style="display: flex; gap: 15px; margin-top: 15px; align-items: center"
+      >
+        <div style="display: flex; align-items: center; gap: 5px">
+          <span class="status-bola" style="background-color: #0d6efd"></span>
+          <span>Iniciada</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 5px">
+          <span class="status-bola" style="background-color: #198754"></span>
+          <span>Concluída</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 5px">
+          <span class="status-bola" style="background-color: #dc3545"></span>
+          <span>Cancelada</span>
+        </div>
+      </div>
+      <div id="lista-abas">
+        <button
+          class="tab-button active"
+          style="background: rgb(0, 123, 255); color: white"
+        >
+          Trabalho</button
+        ><button class="tab-button">Casa</button
+        ><button class="tab-button">Estudos</button>
+      </div>
+
+      <div id="tarefas-container" style="display: block">
+        <h4 id="nome-lista">Trabalho</h4>
+        <ul id="tarefas-lista">
+          <li class="tarefa-item">
+            <span
+              class="status-concluída"
+              style="flex: 1 1 0%; margin-right: 10px"
+              >Refatorar</span
+            >
+            <div style="display: flex; gap: 8px">
+              <span class="icon-btn">✏️</span><span class="icon-btn">🗑️</span>
+            </div>
+            <form class="form-editar-tarefa">
+              <div style="display: flex; gap: 5px">
+                <input style="flex: 1 1 0%" />
+                <select>
+                  <option value="Iniciada">Iniciada</option>
+                  <option value="Cancelada">Cancelada</option>
+                  <option value="Concluida">Concluída</option>
+                </select>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  gap: 5px;
+                  justify-content: space-around;
+                  width: 100%;
+                "
+              >
+                <button>Salvar</button>
+                <button type="button">Cancelar</button>
+              </div>
+            </form>
+          </li>
+          <li class="tarefa-item">
+            <span
+              class="status-iniciada"
+              style="flex: 1 1 0%; margin-right: 10px"
+              >testando</span
+            >
+            <div style="display: flex; gap: 8px">
+              <span class="icon-btn">✏️</span><span class="icon-btn">🗑️</span>
+            </div>
+          </li>
+          <li class="tarefa-item">
+            <span
+              class="status-iniciada"
+              style="flex: 1 1 0%; margin-right: 10px"
+              >Passagem de conhecimento</span
+            >
+            <div style="display: flex; gap: 8px">
+              <span class="icon-btn">✏️</span><span class="icon-btn">🗑️</span>
+            </div>
+          </li>
+          <li class="tarefa-item">
+            <span
+              class="status-iniciada"
+              style="flex: 1 1 0%; margin-right: 10px"
+              >fazer deploy</span
+            >
+            <div style="display: flex; gap: 8px">
+              <span class="icon-btn">✏️</span><span class="icon-btn">🗑️</span>
+            </div>
+          </li>
+          <li class="tarefa-item">
+            <span
+              class="status-cancelada"
+              style="flex: 1 1 0%; margin-right: 10px"
+              >Preparar documentação</span
+            >
+            <div style="display: flex; gap: 8px">
+              <span class="icon-btn">✏️</span><span class="icon-btn">🗑️</span>
+            </div>
+          </li>
+          <li class="tarefa-item">
+            <span
+              class="status-concluída"
+              style="flex: 1 1 0%; margin-right: 10px"
+              >Preparar apresentação</span
+            >
+            <div style="display: flex; gap: 8px">
+              <span class="icon-btn">✏️</span><span class="icon-btn">🗑️</span>
+            </div>
+          </li>
+        </ul>
+
+        <button id="btn-nova-tarefa">+ Adicionar Nova Tarefa</button>
+        <form id="form-nova-tarefa" style="display: flex">
+          <input
+            type="text"
+            id="descricao-tarefa"
+            placeholder="Descrição da tarefa"
+            required=""
+          />
+          <select id="status-tarefa">
+            <option value="iniciada">Iniciada</option>
+            <option value="concluída">Concluída</option>
+            <option value="cancelada">Cancelada</option>
+          </select>
+          <button type="submit">Adicionar</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

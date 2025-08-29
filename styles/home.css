@@ -1,0 +1,178 @@
+#grafico-container {
+  width: 100%;
+  overflow-x: auto;
+}
+#graficoTarefas {
+  max-width: 100%;
+  height: 250px;
+  border: 1px solid #ccc;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+#ul-nav {
+  display: flex;
+  align-items: center;
+}
+
+#ultimas-tarefas {
+  list-style: none;
+  padding: 0;
+}
+#ultimas-tarefas li {
+  background: #fff;
+  margin-bottom: 8px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iniciada {
+  background-color: #0d6efd;
+}
+.concluida {
+  background-color: #198754;
+}
+.cancelada {
+  background-color: #dc3545;
+}
+
+.grafico-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+  height: 200px;
+  padding: 20px;
+  border-left: 2px solid #333;
+  border-bottom: 2px solid #333;
+}
+
+.barra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coluna {
+  width: 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 6px 6px 0 0;
+}
+
+.coluna.iniciada {
+  background: #0d6efd;
+}
+
+.coluna.cancelada {
+  background: #dc3545;
+}
+
+.coluna.concluida {
+  background: #198754;
+}
+
+.barra span {
+  margin-top: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.dashboard {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+/* Gráfico */
+.grafico-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+  height: 200px;
+  padding: 20px;
+  border-left: 0 solid #333;
+  border-bottom: 0 solid #333;
+}
+
+.barra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coluna {
+  width: 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 6px 6px 0 0;
+}
+
+.coluna.iniciada {
+  background: #0d6efd;
+}
+
+.coluna.cancelada {
+  background: #dc3545;
+}
+
+.coluna.concluida {
+  background: #198754;
+}
+
+.barra span {
+  margin-top: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Lista de tarefas */
+.tarefas h3 {
+  margin-bottom: 10px;
+}
+
+.tarefas ul {
+  list-style: disc inside;
+  padding: 0;
+}
+
+#ultimas-tarefas {
+  list-style: none;
+  padding: 0;
+}
+#ultimas-tarefas li {
+  background: #fff;
+  margin-bottom: 8px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  #graficoTarefas {
+    height: 200px;
+  }
+  .dashboard {
+    flex-direction: column; /* empilha os elementos verticalmente */
+    align-items: stretch; /* faz os itens ocuparem a largura disponível */
+    gap: 20px; /* espaço entre gráfico e lista */
+  }
+
+  .tarefas,
+  .grafico-container {
+    width: 100%; /* garante que cada item ocupe toda a largura */
+  }
+}
