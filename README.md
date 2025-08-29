@@ -27,7 +27,6 @@
  ├── listas.html       # Listas de tarefas
  ├── tarefas.html      # Tela de tarefas
  ├── style.css
- ├── main.js
  └── README.md
 ```
 
@@ -41,8 +40,8 @@
 
 ## 📌 Modelo Entidade-Relacionamento (MER)
 
-![MER](assets\taks.drawio.svg)
+![MER](./assets\taks.drawio.svg)
 
 ## 📌 Diagrama Entidade-Relacionamento (DER)
 
-![DER](assets\task_der.svg)
+![DER](./assets\task_der.svg)
