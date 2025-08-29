@@ -38,10 +38,8 @@
 4.  **Listas de Tarefas (listas.html)**
 5.  **Tarefas (tarefas.html)**
 
-## 📌 Modelo Entidade-Relacionamento (MER)
+## Modelo Entidade-Relacionamento (MER)
+![MER](./assets/taks.drawio.svg)
 
-![MER](./assets\taks.drawio.svg)
-
-## 📌 Diagrama Entidade-Relacionamento (DER)
-
-![DER](./assets\task_der.svg)
+## Diagrama Entidade-Relacionamento (DER)
+![DER](./assets/task_der.svg)
