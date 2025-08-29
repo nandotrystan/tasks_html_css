@@ -13,6 +13,7 @@
 -   CSS\
 -   Bootstrap
 
+```
 📂 projeto-tarefas
  ├── 📂 assets
  │    ├── logos/
@@ -28,7 +29,7 @@
  ├── style.css
  ├── main.js
  └── README.md
-
+```
 
 ## 🖼️ Telas Desenvolvidas
 
