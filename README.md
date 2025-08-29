@@ -2,15 +2,15 @@
 
 ## 👩‍💻 Integrantes
 
--   Maya\
--   Bia\
--   Pierre\
+-   Maya
+-   Bia
+-   Pierre
 -   Nando
 
 ## 🛠️ Tecnologias Utilizadas
 
--   HTML\
--   CSS\
+-   HTML
+-   CSS
 -   Bootstrap
 
 ```
