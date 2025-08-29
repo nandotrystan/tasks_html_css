@@ -4,9 +4,9 @@ body {
   margin: 0;
 }
 header {
-  background: #6f42c1;
+  background: black;
   color: white;
-  padding: 15px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,7 +86,7 @@ tr:nth-child(even) {
   color: white;
   font-weight: bold;
   padding: 3px 8px;
-  border-radius: 12px;
+  border-radius: 8px;
   min-width: 60px; /* opcional: largura mínima para uniforme */
   height: 25px; /* altura fixa para centralizar verticalmente */
   text-align: center; /* garante alinhamento do texto */
@@ -112,6 +112,23 @@ tr:nth-child(even) {
   background-color: #dc3545;
 }
 
+.footer {
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid #ddd;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-f {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
   header div a {
@@ -119,5 +136,8 @@ tr:nth-child(even) {
   }
   #menu-toggle {
     display: inline-block;
+  }
+  .container-f {
+    display: none;
   }
 }

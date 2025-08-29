@@ -13,19 +13,12 @@
   </head>
   <body class="bg-light">
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
       <div class="container-fluid">
         <!-- <a class="navbar-brand fw-bold" href="#">📋 Gerenciador de Tarefas</a> -->
-        <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
-          <img
-            id="user-avatar"
-            src="https://cdn.pixabay.com/photo/2022/08/22/11/04/skate-7403432_960_720.jpg" 
-            alt="Foto do usuário"
-            class="rounded-circle me-2"
-            style="width: 40px; height: 40px; object-fit: cover;"
-          />
-          Gerenciador de Tarefas
-        </a>
+        <a class="navbar-brand" href="#">
+          <img src="./assets/logo/logo_taskly_laranja.svg" alt="">
+      </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -42,6 +35,17 @@
             <li class="nav-item me-2">
               <a class="nav-link" href="tarefas.html">Tarefas</a>
             </li>
+            <li>
+              <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+                <img
+                  id="user-avatar"
+                  src="https://cdn.pixabay.com/photo/2022/08/22/11/04/skate-7403432_960_720.jpg" 
+                  alt="Foto do usuário"
+                  class="rounded-circle me-2"
+                  style="width: 40px; height: 40px; object-fit: cover;"
+                />
+              </a>
+            <!-- </li>
             <li class="nav-item">
               <a
                 class="btn btn-outline-light btn-sm"
@@ -50,7 +54,7 @@
               >
                 Logout
               </a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -59,46 +63,59 @@
     <!-- CONTEÚDO -->
     <div class="container mt-5" style="width: 100%;">
       <div class="row g-4">
-        <!-- Boas-vindas + Gráfico -->
-        <div class="">
+        <!-- Boas-vindas -->
+        <div class="col-12">
           <h2 class="mb-3">Bem-vindo, Trystan!</h2>
-          <p>
-            Escolha uma opção no menu acima para gerenciar suas listas de tarefas.
-          </p>
-
-          <div class="dashboard">
-            <!-- Gráfico -->
-             <div>
-                 <h3 class="mt-0">📊 Estatísticas de Tarefas</h3>
-                 <div class="grafico-container">
-                     <div class="barra">
-                     <div class="coluna iniciada" style="height: 150px;">3</div>
-                     <span>Iniciada</span>
-                     </div>
-                     <div class="barra">
-                     <div class="coluna cancelada" style="height: 50px;">1</div>
-                     <span>Cancelada</span>
-                     </div>
-                     <div class="barra">
-                     <div class="coluna concluida" style="height: 150px;">3</div>
-                     <span>Concluída</span>
-                     </div>
-
-             </div>
+          <p>Escolha uma opção no menu acima para gerenciar suas listas de tarefas.</p>
+        </div>
+    
+        <!-- Cards de Estatísticas -->
+        <div class="col-12">
+          <h3 class="mt-0">📊 Estatísticas de Tarefas</h3>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card text-white bg-primary mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">Iniciada</h5>
+                  <p class="card-text">3 tarefas</p>
+                </div>
+              </div>
             </div>
-
-            <!-- Lista de tarefas -->
-            <div class="tarefas">
-                <h3>📝 Últimas Tarefas Criadas</h3>
-                <ul id="ultimas-tarefas">
-                <li>Lavar a sala</li>
-                <li>Refatorar</li>
-                <li>Testando</li>
-                <li>Passagem de conhecimento</li>
-                <li>Fazer deploy</li>
-                </ul>
+            <div class="col-md-4">
+              <div class="card text-white bg-danger mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">Cancelada</h5>
+                  <p class="card-text">1 tarefa</p>
+                </div>
+              </div>
             </div>
+            <div class="col-md-4">
+              <div class="card text-white bg-success mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">Concluída</h5>
+                  <p class="card-text">3 tarefas</p>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+    
+        <!-- Divisória -->
+        <div class="col-12">
+          <hr class="my-4">
+        </div>
+    
+        <!-- Lista de Tarefas -->
+        <div class="col-12">
+          <h3>📝 Últimas Tarefas Criadas</h3>
+          <ul id="ultimas-tarefas" class="list-group">
+            <li class="list-group-item">Lavar a sala</li>
+            <li class="list-group-item">Refatorar</li>
+            <li class="list-group-item">Testando</li>
+            <li class="list-group-item">Passagem de conhecimento</li>
+            <li class="list-group-item">Fazer deploy</li>
+          </ul>
+        </div>
       </div>
     </div>
 

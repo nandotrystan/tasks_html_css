@@ -149,14 +149,14 @@
 
 #ultimas-tarefas {
   list-style: none;
-  padding: 0;
+  padding: 20px;
 }
 #ultimas-tarefas li {
   background: #fff;
   margin-bottom: 8px;
   padding: 10px 15px;
   border-radius: 8px;
-  border: 1px solid #ddd;
+  border: 1px solid #c76b6b;
   display: flex;
   justify-content: space-between;
   align-items: center;

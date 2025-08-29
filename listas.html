@@ -8,6 +8,15 @@
   <body>
     <header>
       <div id="prin">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/logo/logo_taskly_laranja.svg" alt="">
+      </a>
+      </div>
+      <span id="menu-toggle">☰</span>
+      <div style="display: flex; align-items: center; gap: 20px;">
+        <a href="home.html">Home</a>
+        <a href="tarefas.html">Tarefas</a>
+        <!-- <a href="#" id="btn-logout">Logout</a> -->
         <img
           id="user-avatar"
           src="https://cdn.pixabay.com/photo/2022/08/22/11/04/skate-7403432_960_720.jpg"
@@ -15,20 +24,13 @@
           class="rounded-circle me-2"
           style="width: 40px; height: 40px; object-fit: cover"
         />
-        <h1>Gerenciador de Tarefas</h1>
-      </div>
-      <span id="menu-toggle">☰</span>
-      <div>
-        <a href="home.html">🏠 Home</a>
-        <a href="tarefas.html"> Tarefas</a>
-        <a href="#" id="btn-logout">Logout</a>
       </div>
     </header>
 
     <div id="drawer">
-      <a href="home.html">🏠 Home</a>
-      <a href="listas.html">📋 Listas</a>
-      <a href="#" id="drawer-logout">Logout</a>
+      <a href="home.html">Home</a>
+      <a href="listas.html">Listas</a>
+      <a href="#" id="drawer-logout">Sair</a>
     </div>
 
     <main>
@@ -103,8 +105,8 @@
                   width: 100%;
                 "
               >
-                <button>Salvar</button>
-                <button type="button">Cancelar</button>
+                <button class="save">Salvar</button>
+                <button class="cancel" type="button">Cancelar</button>
               </div>
             </form>
           </li>
@@ -177,5 +179,37 @@
         </form>
       </div>
     </main>
+    <footer class="footer mt-auto py-3 bg-dark" style="background-color: rgba(0, 0, 0, 1);">
+      <div class="container">
+        <div class="row container-f">
+          <div class="col-md-4">
+            <h5>Sobre Nós</h5>
+            <p>Informações sobre a empresa ou projeto.</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Contatos</h5>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-envelope"></i> <a href="mailto:contato@exemplo.com">contato@exemplo.com</a></li>
+              <li><i class="fas fa-phone"></i> <a href="tel:+551112345678">+55 11 12345-6789</a></li>
+              <li><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 - Cidade, Estado</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Redes Sociais</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+              <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+              <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <p>&copy; 2025 Exemplo. Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
   </body>
 </html>
