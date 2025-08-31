@@ -19,14 +19,14 @@ header h1 {
 }
 header div a {
   margin-left: 10px;
-  color: rgb(111, 108, 108);
+  color: rgb(179, 173, 173);
   text-decoration: none;
   /* font-weight: bold; */
 }
 
 header div a:hover {
   margin-left: 10px;
-  color: white;
+  color: rgb(231, 224, 224);
   text-decoration: none;
   /* font-weight: bold; */
 }
@@ -207,36 +207,30 @@ header div a:hover {
   border-radius: 3px;
 }
 
-.footer {
-  /* background-color: rgba(255, 255, 255, 0.7); */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-top: 1px solid #ddd;
-  color: white;
-  display: flex;
-  justify-content: space-around;
+.add {
+  margin-left: 10px;
+  border: none;
+  background-color: #6f42c1;
+  color: #fff;
+  border-radius: 5px;
 }
-
-.container-f {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  flex-wrap: wrap;
+.add:hover {
+  background-color: #854eeb;
+  
 }
-
 
 
 
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
-  .container-f {
+  #link-n a{
     display: none;
   }
-  header div a {
-    display: none;
-  } /* esconde links desktop */
   #menu-toggle {
     display: inline-block;
+  }
+  #user-avatar {
+    display: none;
   }
   .tarefa-item {
     flex-direction: column; /* empilha elementos */

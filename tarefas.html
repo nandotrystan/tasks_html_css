@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todas as Tarefas - Gerenciador</title>
     <link rel="stylesheet" href="./styles/tarefas.css">
+    <link rel="stylesheet" href="./styles/global.css">
   </head>
   <body>
     <header>
@@ -13,7 +14,7 @@
       </a>
       </div>
       <span id="menu-toggle">☰</span>
-      <div style="display: flex; align-items: center; gap: 20px;">
+      <div id="link-n" style="display: flex; align-items: center; gap: 20px;">
         <a href="home.html">Home</a>
         <a href="listas.html">Listas de tarefas</a>
         <!-- <a href="#" id="btn-logout">Logout</a> -->
@@ -82,7 +83,7 @@
         </tbody>
       </table>
     </div>
-    <footer class="footer mt-auto py-3 bg-dark" style="background-color: rgba(0, 0, 0, 1);">
+    <footer class="footer mt-auto">
       <div class="container">
         <div class="row container-f">
           <div class="col-md-4">
@@ -92,22 +93,23 @@
           <div class="col-md-4">
             <h5>Contatos</h5>
             <ul class="list-unstyled">
-              <li><i class="fas fa-envelope"></i> <a href="mailto:contato@exemplo.com">contato@exemplo.com</a></li>
-              <li><i class="fas fa-phone"></i> <a href="tel:+551112345678">+55 11 12345-6789</a></li>
-              <li><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 - Cidade, Estado</li>
+              <li class="a-footer"><i class="fas fa-envelope"></i> <a href="mailto:contato@exemplo.com">contato@exemplo.com</a></li>
+              <li class="a-footer"><i class="fas fa-phone"></i> <a href="tel:+551112345678">+55 11 12345-6789</a></li>
+              <li class="a-footer"><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 - Cidade, Estado</li>
             </ul>
           </div>
           <div class="col-md-4">
             <h5>Redes Sociais</h5>
             <ul class="list-unstyled">
-              <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-              <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-              <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+              <li class="a-footer"><a href="#" target="_blank"><img src="./assets/logo/logo-facebook.svg" alt="logo facebook"></a></li>
+              <li class="a-footer"><a href="#" target="_blank"><img src="./assets/logo/logo-twitter.svg" alt="logo twitter"></a></li>
+              <li class="a-footer"><a href="#" target="_blank"><img src="./assets/logo/logo-instagram.svg" alt="logo instagram"></a></li>
+              <li class="a-footer"><a href="#" target="_blank"><img src="./assets/logo/logo-linkedin.svg" alt="logo linkedin"></a></li>
             </ul>
           </div>
         </div>
         <div class="row">
-          <div class="col-12 text-center">
+          <div class="col-12 text-center" style="display: flex; justify-content: center;">
             <p>&copy; 2025 Exemplo. Todos os direitos reservados.</p>
           </div>
         </div>

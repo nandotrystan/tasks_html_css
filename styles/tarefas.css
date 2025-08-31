@@ -17,10 +17,17 @@ header h1 {
   font-size: 1.2rem;
 }
 header div a {
-  color: white;
+  margin-left: 10px;
+  color: rgb(179, 173, 173);
   text-decoration: none;
   /* font-weight: bold; */
-  margin-left: 15px;
+}
+
+header div a:hover {
+  margin-left: 10px;
+  color: rgb(231, 224, 224);
+  text-decoration: none;
+  /* font-weight: bold; */
 }
 #menu-toggle {
   display: none;
@@ -112,32 +119,18 @@ tr:nth-child(even) {
   background-color: #dc3545;
 }
 
-.footer {
-  /* background-color: rgba(255, 255, 255, 0.7); */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-top: 1px solid #ddd;
-  color: white;
-  display: flex;
-  justify-content: space-around;
-}
-
-.container-f {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  flex-wrap: wrap;
-}
 
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
-  header div a {
+  #link-n a{
     display: none;
   }
+  
   #menu-toggle {
     display: inline-block;
   }
-  .container-f {
+  #user-avatar {
     display: none;
   }
+  
 }
