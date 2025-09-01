@@ -290,5 +290,14 @@ header div a:hover {
     justify-content: space-between; /* botões nas extremidades */
   }
 
+  #form-nova-tarefa {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
   
+  #form-nova-tarefa button{
+    margin-top: 5px;
+    padding: 8px;
+  }
 }
