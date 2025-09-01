@@ -91,7 +91,7 @@ header div a:hover {
 }
 .icon-btn {
   cursor: pointer;
-  margin-left: 5px;
+  margin: 0 5px;
 }
 #btn-nova-tarefa,
 #btn-nova-lista {
@@ -233,8 +233,8 @@ header div a:hover {
     display: none;
   }
   .tarefa-item {
-    flex-direction: column; /* empilha elementos */
-    align-items: flex-start; /* alinha à esquerda */
+    /* flex-direction: column; /* empilha elementos */
+    /* align-items: flex-start; alinha à esquerda */
     gap: 8px; /* espaço entre linhas */
   }
 
