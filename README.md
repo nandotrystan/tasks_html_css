@@ -2,7 +2,7 @@
 
 ## 👩‍💻 Integrantes
 
--   Maya
+-   Maria
 -   Bia
 -   Pierre
 -   Nando
